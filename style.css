@@ -2,12 +2,13 @@
 
 .navbar{ 
     display:inline-flex;
-    position: fixed;
+    position: absolute;
     background-image: linear-gradient(#6a00f4, #bc00dd);
     width: 100vw;
     height: 5vh;
     padding:20px;
 }
+
 
 .pagetitle{
     float: left;
@@ -18,12 +19,12 @@
 
 html,body{width:100vw;}
 #vidbg{
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    position: fixed;
-    z-index:-1;
-    content: center;
+    position: relative;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+  
 }
 
 .banner
@@ -38,7 +39,7 @@ html,body{width:100vw;}
 }
 
 .banner video{
-    position: fixed;
+    position: relative;
     height: 100%;
     width: 100%;
 }
